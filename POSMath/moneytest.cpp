@@ -3,5 +3,5 @@
 void main()
 {
 	CMoney m1(100);
-	m1 *= 5;
+	CMoney m2 = m1 * m1;
 }

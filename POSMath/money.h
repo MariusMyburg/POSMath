@@ -18,9 +18,12 @@ public:
 		m_Rands = m_Rands * scale;
 	}
 
-	void operator *(CMoney& right)
+	CMoney& operator *(CMoney right)
 	{
-		m_Rands = m_Rands * right.m_Rands;
+		CMoney ret(0);
+		ret = m_Rands * right.m_Rands;
+
+		return ret;
 	}
 
 };
